@@ -1,0 +1,33 @@
+Visual studio code:
+
+Terminal :
+cd Projectfolder
+pip install pipenv pipenv-pipes
+pipenv --help
+
+--check all virtual envs
+pipenv --venv
+
+--create virtual env (same folder)
+pipenv shell
+
+-- install packages
+pipenv install pandas numpy blabla
+
+-- see all packages
+pipenv lock -r
+
+-- save all package name list
+pipenv run pip freeze > requirements.txt
+
+-- check pipnev
+pipenv check
+
+-- install to dev only (not production)
+pipenv install pystest --dev
+
+-- remove vitual env
+pipenv --rm
+
+-- Recreate virtual env and install all the previous packages
+pipenv install -r requirement.txt
